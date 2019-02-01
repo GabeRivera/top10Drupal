@@ -1,0 +1,18 @@
+uuid: 4021f5c3-a2c2-4d16-a067-1887676123af
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: BusinessB
+type: business_b
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

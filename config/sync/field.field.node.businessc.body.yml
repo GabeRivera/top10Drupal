@@ -1,0 +1,22 @@
+uuid: fd1f2d5a-be80-473d-8132-7f45dfb645aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.businessc
+  module:
+    - text
+id: node.businessc.body
+field_name: body
+entity_type: node
+bundle: businessc
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

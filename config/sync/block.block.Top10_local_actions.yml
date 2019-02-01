@@ -1,0 +1,20 @@
+uuid: eb2fc0da-f456-4f7c-ab41-b84cb5fcda4a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - Top10
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: Top10_local_actions
+theme: Top10
+region: content
+weight: -1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

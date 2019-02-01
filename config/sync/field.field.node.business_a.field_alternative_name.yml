@@ -1,0 +1,19 @@
+uuid: 5575c4ed-deed-4a53-94d1-c2108270273a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternative_name
+    - node.type.business_a
+id: node.business_a.field_alternative_name
+field_name: field_alternative_name
+entity_type: node
+bundle: business_a
+label: 'Alternative Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

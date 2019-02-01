@@ -1,0 +1,66 @@
+uuid: de5b4050-b897-42ad-a8a3-e2012d524d54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business_a.body
+    - field.field.node.business_a.field_alternative_name
+    - field.field.node.business_a.field_amount_available
+    - field.field.node.business_a.field_api_id
+    - field.field.node.business_a.field_category
+    - node.type.business_a
+  module:
+    - text
+    - user
+id: node.business_a.default
+targetEntityType: node
+bundle: business_a
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_alternative_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_amount_available:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_api_id:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_category:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

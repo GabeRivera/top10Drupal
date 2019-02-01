@@ -1,0 +1,14 @@
+uuid: a00e1530-1b3b-4eb6-a329-79f657e1b2ba
+name: top10
+mail: gabriel.f.rivera.10@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

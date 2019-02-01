@@ -1,0 +1,77 @@
+uuid: 898f9212-ce6c-41b3-a526-b7b3bf5a19cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business_b.body
+    - field.field.node.business_b.field_api_id
+    - field.field.node.business_b.field_asdf
+    - field.field.node.business_b.field_category
+    - field.field.node.business_b.field_end_of_offer
+    - node.type.business_b
+  module:
+    - datetime
+    - text
+id: node.business_b.default
+targetEntityType: node
+bundle: business_b
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_api_id:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_asdf:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_category:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_end_of_offer:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

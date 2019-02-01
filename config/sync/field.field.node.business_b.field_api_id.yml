@@ -1,0 +1,23 @@
+uuid: 4ea376bb-db0a-4a1b-b415-61854d52afcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_api_id
+    - node.type.business_b
+id: node.business_b.field_api_id
+field_name: field_api_id
+entity_type: node
+bundle: business_b
+label: API_ID
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

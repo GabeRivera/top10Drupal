@@ -1,0 +1,22 @@
+uuid: 161b54ed-d3b5-44c2-8b2f-8196775e634a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.business_b
+  module:
+    - text
+id: node.business_b.body
+field_name: body
+entity_type: node
+bundle: business_b
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

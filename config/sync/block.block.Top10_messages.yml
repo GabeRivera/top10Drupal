@@ -1,0 +1,22 @@
+uuid: f9ced087-5085-466f-9340-c70e360f55a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - Top10
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: Top10_messages
+theme: Top10
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
