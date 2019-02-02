@@ -27,4 +27,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_api_id: true
+  field_asdf: true
+  field_category: true
+  field_end_of_offer: true
