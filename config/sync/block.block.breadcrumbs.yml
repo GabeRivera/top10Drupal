@@ -1,14 +1,13 @@
-uuid: 87cc93d0-2832-4f5c-9b8d-6c552dab7c6e
+uuid: 7e59d214-31e1-4cfd-9cf1-57a228f7aa25
 langcode: en
 status: true
 dependencies:
   module:
+    - ctools
     - system
   theme:
     - Top10
-_core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: Top10_breadcrumbs
+id: breadcrumbs
 theme: Top10
 region: breadcrumb
 weight: 0
@@ -19,4 +18,11 @@ settings:
   label: Breadcrumbs
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      home_security: home_security
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

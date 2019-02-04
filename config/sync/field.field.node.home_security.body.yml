@@ -1,16 +1,16 @@
-uuid: fd1f2d5a-be80-473d-8132-7f45dfb645aa
+uuid: f42c3e71-6842-4b35-b6f0-04fdf5625bae
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.businessc
+    - node.type.home_security
   module:
     - text
-id: node.businessc.body
+id: node.home_security.body
 field_name: body
 entity_type: node
-bundle: businessc
+bundle: home_security
 label: Body
 description: ''
 required: false

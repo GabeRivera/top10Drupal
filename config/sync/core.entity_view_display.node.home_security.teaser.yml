@@ -1,17 +1,17 @@
-uuid: bd65d550-63c7-4a8a-af45-fa9b9015908f
+uuid: d584d4fe-b605-4166-9ccb-bcb607abc3eb
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.business_b.body
-    - node.type.business_b
+    - field.field.node.home_security.body
+    - node.type.home_security
   module:
     - text
     - user
-id: node.business_b.teaser
+id: node.home_security.teaser
 targetEntityType: node
-bundle: business_b
+bundle: home_security
 mode: teaser
 content:
   body:
@@ -27,8 +27,4 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  field_api_id: true
-  field_asdf: true
-  field_category: true
-  field_end_of_offer: true
+hidden: {  }

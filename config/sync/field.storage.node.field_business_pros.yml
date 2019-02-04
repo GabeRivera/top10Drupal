@@ -1,17 +1,16 @@
-uuid: 3ee10c5b-15f6-416a-9039-b4065d6bb11e
+uuid: 424cdebd-626d-4b72-99d0-b25befba4469
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_category
-field_name: field_category
+    - text
+id: node.field_business_pros
+field_name: field_business_pros
 entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

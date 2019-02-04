@@ -1,0 +1,72 @@
+uuid: 9dacf00e-2f83-44e6-8227-9b24b6be328c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_security.body
+    - field.field.node.home_security.field_business_category
+    - field.field.node.home_security.field_business_cons
+    - field.field.node.home_security.field_business_logo
+    - field.field.node.home_security.field_business_overall
+    - field.field.node.home_security.field_business_pros
+    - node.type.home_security
+  module:
+    - image
+    - text
+    - user
+id: node.home_security.default
+targetEntityType: node
+bundle: home_security
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_business_category:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_business_cons:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_business_logo:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_business_overall:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_business_pros:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,16 +1,16 @@
-uuid: e3f6477c-ed6f-4c1f-957b-5366a1b74dba
+uuid: f201aacc-9a7a-46b5-bdda-82bfe24fbdd5
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_amount_available
-field_name: field_amount_available
+    - taxonomy
+id: node.field_business_category
+field_name: field_business_category
 entity_type: node
-type: integer
+type: entity_reference
 settings:
-  unsigned: false
-  size: normal
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

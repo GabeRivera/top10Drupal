@@ -1,0 +1,21 @@
+uuid: ae4ced9d-cd2c-4adf-a3d5-39b4882078ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_cons
+    - node.type.home_security
+  module:
+    - text
+id: node.home_security.field_business_cons
+field_name: field_business_cons
+entity_type: node
+bundle: home_security
+label: Cons
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

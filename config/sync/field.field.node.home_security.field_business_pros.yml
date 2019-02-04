@@ -1,0 +1,21 @@
+uuid: 48ec303f-b126-45f0-9428-c3d39ca5e31c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_pros
+    - node.type.home_security
+  module:
+    - text
+id: node.home_security.field_business_pros
+field_name: field_business_pros
+entity_type: node
+bundle: home_security
+label: Pros
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 92d6f554-e39c-47cf-bf8f-3b7e54a28996
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_overall
+    - node.type.home_security
+  module:
+    - text
+id: node.home_security.field_business_overall
+field_name: field_business_overall
+entity_type: node
+bundle: home_security
+label: Overall
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,15 +1,15 @@
-uuid: 74442a9c-1b8a-4721-83ea-41523b8c8ddd
+uuid: 91d7440a-c986-47b0-9eb8-9f0b3941abcb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_category
-    - node.type.business_b
+    - field.storage.node.field_business_category
+    - node.type.home_security
     - taxonomy.vocabulary.category
-id: node.business_b.field_category
-field_name: field_category
+id: node.home_security.field_business_category
+field_name: field_business_category
 entity_type: node
-bundle: business_b
+bundle: home_security
 label: Category
 description: ''
 required: false

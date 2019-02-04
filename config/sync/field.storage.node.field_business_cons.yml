@@ -1,17 +1,16 @@
-uuid: d143e2a8-962f-49f0-8cf2-63a9d9a81808
+uuid: 0b16cbe7-221a-4e3f-ba91-54c2344e52f4
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_asdf
-field_name: field_asdf
+    - text
+id: node.field_business_cons
+field_name: field_business_cons
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

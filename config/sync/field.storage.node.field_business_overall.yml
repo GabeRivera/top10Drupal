@@ -1,17 +1,16 @@
-uuid: ab07e2b8-35be-4550-8319-e4eb6543f3ed
+uuid: cc6417b9-6b38-4374-a9b3-31962f1ba777
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_term_length
-field_name: field_term_length
+    - text
+id: node.field_business_overall
+field_name: field_business_overall
 entity_type: node
-type: integer
-settings:
-  unsigned: false
-  size: normal
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true
