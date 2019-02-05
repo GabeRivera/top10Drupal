@@ -21,10 +21,7 @@ settings:
 visibility:
   node_type:
     id: node_type
-    bundles:
-      business_a: business_a
-      business_b: business_b
-      businessc: businessc
+    bundles: null
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
