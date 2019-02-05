@@ -1,4 +1,4 @@
-uuid: b46a6434-aa33-4b91-ba69-adab275a08cd
+uuid: 130d15ba-0704-4248-b8de-77f8f3fd78f6
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - system
   theme:
     - Top10
-_core:
-  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: Top10_main_menu
+id: mainnavigation
 theme: Top10
 region: header
 weight: 0
@@ -22,5 +20,5 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 0
 visibility: {  }

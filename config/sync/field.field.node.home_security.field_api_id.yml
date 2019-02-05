@@ -1,0 +1,23 @@
+uuid: 1af3b0b1-261b-4c5d-b515-59a05cedb767
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_api_id
+    - node.type.home_security
+id: node.home_security.field_api_id
+field_name: field_api_id
+entity_type: node
+bundle: home_security
+label: 'API ID'
+description: 'The API ID for this Business in the Reviews API'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

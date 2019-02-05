@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.home_security.body
+    - field.field.node.home_security.field_api_id
     - field.field.node.home_security.field_business_category
     - field.field.node.home_security.field_business_cons
     - field.field.node.home_security.field_business_logo
@@ -35,6 +36,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_api_id:
+    weight: 27
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_business_category:
     weight: 26
     settings:
