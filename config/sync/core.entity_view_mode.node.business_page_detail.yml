@@ -1,0 +1,10 @@
+uuid: a2137caf-fcad-4810-8ec1-8ab8f24cce5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.business_page_detail
+label: 'Business Page Detail'
+targetEntityType: node
+cache: true

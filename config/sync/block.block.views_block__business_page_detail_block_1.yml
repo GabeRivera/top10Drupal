@@ -1,0 +1,33 @@
+uuid: cb8f01c4-0671-4789-ac4a-aeb015e51157
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.business_page_detail
+  module:
+    - ctools
+    - views
+  theme:
+    - Top10
+id: views_block__business_page_detail_block_1
+theme: Top10
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:business_page_detail-block_1'
+settings:
+  id: 'views_block:business_page_detail-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      home_security: home_security
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,8 +1,9 @@
-uuid: 9dacf00e-2f83-44e6-8227-9b24b6be328c
+uuid: 43eb4b4f-dca4-4a35-8d12-c57f4a0f9fd0
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.horizontal_card
     - field.field.node.home_security.body
     - field.field.node.home_security.field_api_id
     - field.field.node.home_security.field_business_category
@@ -16,10 +17,10 @@ dependencies:
     - image
     - text
     - user
-id: node.home_security.default
+id: node.home_security.horizontal_card
 targetEntityType: node
 bundle: home_security
-mode: default
+mode: horizontal_card
 content:
   body:
     label: hidden
@@ -30,7 +31,7 @@ content:
     region: content
   field_api_id:
     weight: 107
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -39,7 +40,7 @@ content:
     region: content
   field_business_category:
     weight: 106
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -54,7 +55,7 @@ content:
     region: content
   field_business_logo:
     weight: 105
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -63,7 +64,7 @@ content:
     region: content
   field_business_overall:
     weight: 104
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -77,7 +78,7 @@ content:
     region: content
   field_business_rank:
     weight: 108
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
