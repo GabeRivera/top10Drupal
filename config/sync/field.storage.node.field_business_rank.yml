@@ -1,0 +1,20 @@
+uuid: 79f69c3d-398b-42f3-aad5-28d452d4c6cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_business_rank
+field_name: field_business_rank
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

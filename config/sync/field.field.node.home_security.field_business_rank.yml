@@ -1,0 +1,23 @@
+uuid: 9777cd2e-f9e9-4177-8b3e-d7806778c58b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_rank
+    - node.type.home_security
+id: node.home_security.field_business_rank
+field_name: field_business_rank
+entity_type: node
+bundle: home_security
+label: 'Rank Within Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
