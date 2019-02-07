@@ -9,7 +9,7 @@ _core:
 id: Top10_page_title
 theme: Top10
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

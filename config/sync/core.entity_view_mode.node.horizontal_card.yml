@@ -1,0 +1,10 @@
+uuid: 45739be6-800c-426f-b4f1-f1ce0ef90aef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.horizontal_card
+label: 'Horizontal Card'
+targetEntityType: node
+cache: true

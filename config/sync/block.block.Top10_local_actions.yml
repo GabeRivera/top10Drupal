@@ -9,7 +9,7 @@ _core:
 id: Top10_local_actions
 theme: Top10
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

@@ -4,13 +4,13 @@ status: true
 dependencies:
   module:
     - business_reviews
-    - node
+    - ctools
   theme:
     - Top10
 id: businessreviews
 theme: Top10
 region: content
-weight: 1
+weight: -1
 provider: null
 plugin: business_reviews_block
 settings:
@@ -19,9 +19,10 @@ settings:
   provider: business_reviews
   label_display: visible
 visibility:
-  node_type:
-    id: node_type
-    bundles: null
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      home_security: home_security
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

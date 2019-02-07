@@ -1,0 +1,32 @@
+uuid: c9eea5ea-0821-4eaa-913b-0ec0cd76f4b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_businesses_column
+  module:
+    - ctools
+    - views
+  theme:
+    - Top10
+id: views_block__related_businesses_column_block_1
+theme: Top10
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:related_businesses_column-block_1'
+settings:
+  id: 'views_block:related_businesses_column-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      home_security: home_security
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
