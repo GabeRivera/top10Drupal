@@ -24,6 +24,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drupal/easy_breadcrumb": "^1.8",
+        "drupal/geolocation": "^1.11",
         "drupal/key": "^1.8",
         "drupal/material_base": "^1.6",
         "drupal/paragraphs": "^1.5",
