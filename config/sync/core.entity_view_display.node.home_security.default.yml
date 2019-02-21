@@ -5,16 +5,16 @@ dependencies:
   config:
     - field.field.node.home_security.body
     - field.field.node.home_security.field_api_id
+    - field.field.node.home_security.field_business_address
     - field.field.node.home_security.field_business_category
     - field.field.node.home_security.field_business_cons
-    - field.field.node.home_security.field_business_location
     - field.field.node.home_security.field_business_logo
     - field.field.node.home_security.field_business_overall
     - field.field.node.home_security.field_business_pros
     - field.field.node.home_security.field_business_rank
     - node.type.home_security
   module:
-    - geolocation
+    - address
     - image
     - text
     - user
@@ -39,6 +39,13 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  field_business_address:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
   field_business_category:
     weight: 106
     label: above
@@ -53,13 +60,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_business_location:
-    weight: 109
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: geolocation_latlng
     region: content
   field_business_logo:
     weight: 105
