@@ -2,9 +2,11 @@ uuid: 89ed7616-c2af-4fb4-a8fe-6f46c8a21863
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.category
   module:
     - node
-    - user
+    - taxonomy
 id: categories_listing
 label: 'Categories Listing'
 module: views
@@ -21,9 +23,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -65,16 +66,26 @@ display:
             next: ››
       style:
         type: default
+        options:
+          grouping:
+            -
+              field: name
+              rendered: true
+              rendered_strip: false
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         title:
           id: title
           table: node_field_data
           field: title
-          settings:
-            link_to_entity: false
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
@@ -111,7 +122,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -121,6 +132,8 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -131,18 +144,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
+          plugin_id: field
+      filters: {  }
       sorts:
         created:
           id: created
@@ -163,8 +166,31 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          relationship: none
+          group_type: group
+          admin_label: term
+          required: false
+          vids:
+            - category
+          entity_type: node
+          plugin_id: node_term_data
+        reverse__node__field_business_category:
+          id: reverse__node__field_business_category
+          table: taxonomy_term_field_data
+          field: reverse__node__field_business_category
+          relationship: term_node_tid
+          group_type: group
+          admin_label: field_business_category
+          required: false
+          entity_type: taxonomy_term
+          plugin_id: entity_reverse
       arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -172,7 +198,6 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_1:
     display_plugin: page
@@ -189,5 +214,4 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
