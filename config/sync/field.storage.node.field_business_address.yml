@@ -1,16 +1,16 @@
-uuid: d9b624f3-f362-4b44-aafe-37c9fb83a3d5
+uuid: 2db64d45-5007-4426-83fd-aeffd9ea169b
 langcode: en
 status: true
 dependencies:
   module:
-    - geolocation
+    - address
     - node
-id: node.field_business_location
-field_name: field_business_location
+id: node.field_business_address
+field_name: field_business_address
 entity_type: node
-type: geolocation
+type: address
 settings: {  }
-module: geolocation
+module: address
 locked: false
 cardinality: 1
 translatable: true
