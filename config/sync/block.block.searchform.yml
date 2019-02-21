@@ -1,0 +1,20 @@
+uuid: f4fc0b0a-4afe-465b-ab78-cfd7dcc275bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - Top10
+id: searchform
+theme: Top10
+region: header
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }
