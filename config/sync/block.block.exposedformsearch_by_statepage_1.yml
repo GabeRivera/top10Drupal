@@ -1,0 +1,29 @@
+uuid: 9cf4895c-ab95-49e4-8681-f402ae0a238f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_by_state
+  module:
+    - system
+    - views
+  theme:
+    - Top10
+id: exposedformsearch_by_statepage_1
+theme: Top10
+region: content
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_by_state-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_by_state-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: 'Search This shit'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/17
+    negate: false
+    context_mapping: {  }
