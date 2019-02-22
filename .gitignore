@@ -11,6 +11,7 @@
 # Ignore sensitive information
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
+/config/sync/key.key.test_api_key.yml
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
