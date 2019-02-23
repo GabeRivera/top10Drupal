@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.horizontal_card
     - field.field.node.home_security.body
     - field.field.node.home_security.field_api_id
+    - field.field.node.home_security.field_business_address
     - field.field.node.home_security.field_business_category
     - field.field.node.home_security.field_business_cons
     - field.field.node.home_security.field_business_logo
@@ -58,9 +59,8 @@ content:
     label: hidden
     settings:
       image_style: ''
-      image_link: ''
     third_party_settings: {  }
-    type: image
+    type: image_url
     region: content
   field_business_overall:
     weight: 104
