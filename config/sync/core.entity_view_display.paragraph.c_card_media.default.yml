@@ -7,10 +7,12 @@ dependencies:
     - field.field.paragraph.c_card_media.field_c_card_media_link
     - field.field.paragraph.c_card_media.field_c_card_media_text
     - field.field.paragraph.c_card_media.field_c_card_media_title
+    - field.field.paragraph.c_card_media.field_c_card_media_width
     - paragraphs.paragraphs_type.c_card_media
   module:
     - image
     - link
+    - options
     - text
 id: paragraph.c_card_media.default
 targetEntityType: paragraph
@@ -51,5 +53,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_c_card_media_width:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
 hidden: {  }

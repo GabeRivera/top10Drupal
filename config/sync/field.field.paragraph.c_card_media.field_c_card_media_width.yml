@@ -1,0 +1,23 @@
+uuid: a64fe4d1-1813-40fb-aafa-af38e10ce44c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_card_media_width
+    - paragraphs.paragraphs_type.c_card_media
+  module:
+    - options
+id: paragraph.c_card_media.field_c_card_media_width
+field_name: field_c_card_media_width
+entity_type: paragraph
+bundle: c_card_media
+label: Width
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '4'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
