@@ -1,0 +1,9 @@
+uuid: fa0b03db-1669-4e58-a146-0b06669c4f29
+langcode: en
+status: true
+dependencies: {  }
+id: c_layout_section
+label: 'Layout Section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

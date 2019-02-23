@@ -1,0 +1,21 @@
+uuid: 26223f27-f4d4-4f7a-b239-87f369e31a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_card_media_text
+    - paragraphs.paragraphs_type.c_card_media
+  module:
+    - text
+id: paragraph.c_card_media.field_c_card_media_text
+field_name: field_c_card_media_text
+entity_type: paragraph
+bundle: c_card_media
+label: 'Text Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

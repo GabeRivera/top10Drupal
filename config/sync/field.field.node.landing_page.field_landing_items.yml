@@ -1,0 +1,34 @@
+uuid: 2817e8d0-d141-4abd-9501-f2d4f3870692
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landing_items
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.c_layout_section
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_landing_items
+field_name: field_landing_items
+entity_type: node
+bundle: landing_page
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      c_layout_section: c_layout_section
+    target_bundles_drag_drop:
+      c_card_media:
+        weight: 3
+        enabled: false
+      c_layout_section:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

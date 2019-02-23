@@ -1,0 +1,41 @@
+uuid: 51a68ed8-a787-4351-aa0d-c5e85347b266
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_layout_section.field_layout_components
+    - field.field.paragraph.c_layout_section.field_layout_items_per_row
+    - field.field.paragraph.c_layout_section.field_layout_width
+    - paragraphs.paragraphs_type.c_layout_section
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.c_layout_section.default
+targetEntityType: paragraph
+bundle: c_layout_section
+mode: default
+content:
+  field_layout_components:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_layout_items_per_row:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_layout_width:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

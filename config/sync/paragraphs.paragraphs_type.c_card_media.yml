@@ -1,0 +1,9 @@
+uuid: 6491f238-7ca0-4310-b8e8-061012626e92
+langcode: en
+status: true
+dependencies: {  }
+id: c_card_media
+label: 'Card Media'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

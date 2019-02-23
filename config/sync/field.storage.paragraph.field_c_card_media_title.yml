@@ -1,0 +1,20 @@
+uuid: 0f152cf0-6cb1-484e-9ebc-e03d6a7e6bb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_c_card_media_title
+field_name: field_c_card_media_title
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

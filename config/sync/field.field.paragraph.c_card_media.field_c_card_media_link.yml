@@ -1,0 +1,23 @@
+uuid: a7b9f9c8-34b6-47c1-9cc3-a10559cfd61a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_card_media_link
+    - paragraphs.paragraphs_type.c_card_media
+  module:
+    - link
+id: paragraph.c_card_media.field_c_card_media_link
+field_name: field_c_card_media_link
+entity_type: paragraph
+bundle: c_card_media
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

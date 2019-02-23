@@ -1,0 +1,21 @@
+uuid: 9f9b0211-42fa-43c7-8921-ad0e9bdc3cd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_card_media_title
+    - paragraphs.paragraphs_type.c_card_media
+  module:
+    - text
+id: paragraph.c_card_media.field_c_card_media_title
+field_name: field_c_card_media_title
+entity_type: paragraph
+bundle: c_card_media
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

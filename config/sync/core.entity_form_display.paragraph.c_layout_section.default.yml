@@ -1,0 +1,44 @@
+uuid: f3dd753e-96b8-4e16-b290-79a3960ac4aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_layout_section.field_layout_components
+    - field.field.paragraph.c_layout_section.field_layout_items_per_row
+    - field.field.paragraph.c_layout_section.field_layout_width
+    - paragraphs.paragraphs_type.c_layout_section
+  module:
+    - paragraphs
+id: paragraph.c_layout_section.default
+targetEntityType: paragraph
+bundle: c_layout_section
+mode: default
+content:
+  field_layout_components:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_layout_items_per_row:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_layout_width:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

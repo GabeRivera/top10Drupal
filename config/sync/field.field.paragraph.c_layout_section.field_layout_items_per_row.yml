@@ -1,0 +1,23 @@
+uuid: 2e12af5b-c384-4b80-b4bb-9bca92ce7024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_items_per_row
+    - paragraphs.paragraphs_type.c_layout_section
+  module:
+    - options
+id: paragraph.c_layout_section.field_layout_items_per_row
+field_name: field_layout_items_per_row
+entity_type: paragraph
+bundle: c_layout_section
+label: 'Items per row'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
