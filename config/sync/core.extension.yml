@@ -47,7 +47,11 @@ module:
   shortcut: 0
   system: 0
   taxonomy: 0
+<<<<<<< HEAD
   telephone: 0
+=======
+  taxonomy_menu: 0
+>>>>>>> e9bd502a18384ddfb879e2648b9f9deaf51286b7
   text: 0
   token: 0
   toolbar: 0

@@ -6,10 +6,52 @@ definitions:
     weight: 0
     expanded: false
   standard__front_page:
-    weight: -50
+    enabled: true
     menu_name: main
     parent: ''
     expanded: false
+    weight: -50
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories_menu__1':
+    parent: 'menu_link_content:5ef1f3db-3834-472f-a1d1-a81a13c0262d'
+    weight: -50
+    expanded: true
     enabled: true
+    menu_name: cat
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories_menu__5':
+    parent: 'menu_link_content:5ef1f3db-3834-472f-a1d1-a81a13c0262d'
+    weight: -49
+    expanded: true
+    enabled: true
+    menu_name: cat
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories_menu__10':
+    weight: -50
+    menu_name: cat
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categories_menu.9'
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories_menu__11':
+    weight: -49
+    menu_name: cat
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categories_menu.9'
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories_menu__12':
+    weight: -48
+    menu_name: cat
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categories_menu.9'
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories_menu__13':
+    parent: 'menu_link_content:5ef1f3db-3834-472f-a1d1-a81a13c0262d'
+    weight: -47
+    expanded: true
+    enabled: true
+    menu_name: cat
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories_menu__9':
+    parent: 'menu_link_content:5ef1f3db-3834-472f-a1d1-a81a13c0262d'
+    weight: -48
+    expanded: true
+    enabled: true
+    menu_name: cat
 _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
