@@ -1,9 +1,16 @@
 uuid: 70bbc76d-99e7-40a8-88f3-afac85b53b6f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - cat
+    parent: 'cat:'
 name: Category
 vid: category
 description: 'Business Category'
-hierarchy: 0
+hierarchy: 1
 weight: 0

@@ -1,0 +1,24 @@
+uuid: b4dab7d1-69d3-4b0f-9581-66cb8b60d1d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.cat
+  module:
+    - system
+  theme:
+    - Top10
+id: categoriesmenu
+theme: Top10
+region: navbar
+weight: -6
+provider: null
+plugin: 'system_menu_block:cat'
+settings:
+  id: 'system_menu_block:cat'
+  label: 'Categories Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
