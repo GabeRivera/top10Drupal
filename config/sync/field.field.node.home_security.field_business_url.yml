@@ -1,0 +1,23 @@
+uuid: e1fedc69-c385-4e4e-8a0a-4c993d0d5649
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_url
+    - node.type.home_security
+  module:
+    - link
+id: node.home_security.field_business_url
+field_name: field_business_url
+entity_type: node
+bundle: home_security
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

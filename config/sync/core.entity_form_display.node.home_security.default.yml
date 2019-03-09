@@ -10,14 +10,18 @@ dependencies:
     - field.field.node.home_security.field_business_cons
     - field.field.node.home_security.field_business_logo
     - field.field.node.home_security.field_business_overall
+    - field.field.node.home_security.field_business_phone
     - field.field.node.home_security.field_business_pros
     - field.field.node.home_security.field_business_rank
+    - field.field.node.home_security.field_business_url
     - image.style.thumbnail
     - node.type.home_security
   module:
     - address
     - image
+    - link
     - path
+    - telephone
     - text
 id: node.home_security.default
 targetEntityType: node
@@ -86,6 +90,13 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_business_phone:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
   field_business_pros:
     weight: 5
     settings:
@@ -100,6 +111,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_business_url:
+    weight: 32
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path

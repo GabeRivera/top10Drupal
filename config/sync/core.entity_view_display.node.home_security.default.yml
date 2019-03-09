@@ -10,11 +10,15 @@ dependencies:
     - field.field.node.home_security.field_business_cons
     - field.field.node.home_security.field_business_logo
     - field.field.node.home_security.field_business_overall
+    - field.field.node.home_security.field_business_phone
     - field.field.node.home_security.field_business_pros
     - field.field.node.home_security.field_business_rank
+    - field.field.node.home_security.field_business_url
     - node.type.home_security
   module:
     - image
+    - link
+    - telephone
     - text
     - user
 id: node.home_security.default
@@ -31,14 +35,14 @@ content:
     region: content
   field_business_cons:
     weight: 3
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_business_logo:
     weight: 5
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -47,17 +51,37 @@ content:
     region: content
   field_business_overall:
     weight: 4
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
+  field_business_phone:
+    weight: 6
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
   field_business_pros:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_business_url:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 0
