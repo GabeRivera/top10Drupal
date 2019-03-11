@@ -35,5 +35,7 @@ hidden:
   field_business_location: true
   field_business_logo: true
   field_business_overall: true
+  field_business_phone: true
   field_business_pros: true
   field_business_rank: true
+  field_business_url: true

@@ -93,3 +93,5 @@ content:
 hidden:
   field_business_address: true
   field_business_location: true
+  field_business_phone: true
+  field_business_url: true
