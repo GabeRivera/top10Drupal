@@ -1,8 +1,0 @@
-uuid: 46149b0a-5f5f-422b-bcbe-917d592d3a51
-langcode: en
-status: true
-dependencies: {  }
-id: cat
-label: 'Categories Menu'
-description: ''
-locked: false

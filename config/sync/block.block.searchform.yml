@@ -9,7 +9,7 @@ dependencies:
 id: searchform
 theme: Top10
 region: navbar
-weight: 0
+weight: -3
 provider: null
 plugin: search_form_block
 settings:

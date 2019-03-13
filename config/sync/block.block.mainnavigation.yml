@@ -10,8 +10,8 @@ dependencies:
     - Top10
 id: mainnavigation
 theme: Top10
-region: header
-weight: 0
+region: navbar
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:
