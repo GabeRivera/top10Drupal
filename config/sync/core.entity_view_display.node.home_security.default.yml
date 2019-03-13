@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.home_security.field_business_address
     - field.field.node.home_security.field_business_category
     - field.field.node.home_security.field_business_cons
+    - field.field.node.home_security.field_business_hero
     - field.field.node.home_security.field_business_logo
     - field.field.node.home_security.field_business_overall
     - field.field.node.home_security.field_business_phone
@@ -18,7 +19,6 @@ dependencies:
   module:
     - image
     - link
-    - telephone
     - text
     - user
 id: node.home_security.default
@@ -40,6 +40,15 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+  field_business_hero:
+    weight: 8
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_business_logo:
     weight: 5
     label: hidden
@@ -60,9 +69,9 @@ content:
     weight: 6
     label: hidden
     settings:
-      title: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: telephone_link
+    type: string
     region: content
   field_business_pros:
     weight: 2
@@ -78,10 +87,10 @@ content:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
-    type: link
+    type: link_separate
     region: content
   links:
     weight: 0

@@ -1,0 +1,10 @@
+uuid: 93275dfb-8d24-4867-bbc3-506ccb4df6dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.contact
+label: 'Business Contact'
+targetEntityType: node
+cache: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.home_security.field_business_address
     - field.field.node.home_security.field_business_category
     - field.field.node.home_security.field_business_cons
+    - field.field.node.home_security.field_business_hero
     - field.field.node.home_security.field_business_logo
     - field.field.node.home_security.field_business_overall
     - field.field.node.home_security.field_business_phone
@@ -73,6 +74,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_business_hero:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_business_logo:
     weight: 8
