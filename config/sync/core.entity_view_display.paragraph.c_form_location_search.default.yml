@@ -1,0 +1,12 @@
+uuid: 7c989a3a-cda5-4002-ae62-6a44ca944f0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.c_form_location_search
+id: paragraph.c_form_location_search.default
+targetEntityType: paragraph
+bundle: c_form_location_search
+mode: default
+content: {  }
+hidden: {  }

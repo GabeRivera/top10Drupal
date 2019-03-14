@@ -1,35 +1,35 @@
-uuid: f3dd753e-96b8-4e16-b290-79a3960ac4aa
+uuid: b16cddf7-4fc5-46c8-9a7a-c6094ac91cef
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.c_layout_section.field_background_image
-    - field.field.paragraph.c_layout_section.field_layout_components
-    - field.field.paragraph.c_layout_section.field_layout_width
-    - image.style.thumbnail
-    - paragraphs.paragraphs_type.c_layout_section
+    - field.field.paragraph.c_hero.field_c_hero_extras
+    - field.field.paragraph.c_hero.field_c_hero_text
+    - field.field.paragraph.c_hero.field_c_hero_title
+    - paragraphs.paragraphs_type.c_hero
   module:
     - field_group
-    - image
     - paragraphs
+    - text
 third_party_settings:
   field_group:
-    group_op:
+    group_options:
       children:
-        - group_content
-        - group_style
+        - group_text
+        - group_extras
       parent_name: ''
       weight: 20
       format_type: tabs
       format_settings:
         id: ''
         classes: ''
-        direction: horizontal
+        direction: vertical
       label: Options
-    group_content:
+    group_text:
       children:
-        - field_layout_components
-      parent_name: group_op
+        - field_c_hero_title
+        - field_c_hero_text
+      parent_name: group_options
       weight: 20
       format_type: tab
       format_settings:
@@ -38,12 +38,11 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-      label: Content
-    group_style:
+      label: Text
+    group_extras:
       children:
-        - field_layout_width
-        - field_background_image
-      parent_name: group_op
+        - field_c_hero_extras
+      parent_name: group_options
       weight: 21
       format_type: tab
       format_settings:
@@ -52,23 +51,15 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-      label: Style
-id: paragraph.c_layout_section.default
+      label: Extras
+id: paragraph.c_hero.default
 targetEntityType: paragraph
-bundle: c_layout_section
+bundle: c_hero
 mode: default
 content:
-  field_background_image:
-    weight: 1
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_layout_components:
+  field_c_hero_extras:
     type: entity_reference_paragraphs
-    weight: 1
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -78,11 +69,21 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_layout_width:
-    weight: 0
-    settings: {  }
+  field_c_hero_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: text_textarea
+    region: content
+  field_c_hero_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
 hidden:
   created: true

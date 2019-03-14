@@ -1,0 +1,45 @@
+uuid: a15fe0f6-2ba2-4ee8-90b4-52281a2b1c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_hero_extras
+    - paragraphs.paragraphs_type.c_cta
+    - paragraphs.paragraphs_type.c_form_location_search
+    - paragraphs.paragraphs_type.c_hero
+  module:
+    - entity_reference_revisions
+id: paragraph.c_hero.field_c_hero_extras
+field_name: field_c_hero_extras
+entity_type: paragraph
+bundle: c_hero
+label: Extras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      c_form_location_search: c_form_location_search
+      c_cta: c_cta
+    target_bundles_drag_drop:
+      c_card_media:
+        weight: 5
+        enabled: false
+      c_form_location_search:
+        enabled: true
+        weight: 6
+      c_cta:
+        enabled: true
+        weight: 7
+      c_hero:
+        weight: 7
+        enabled: false
+      c_layout_section:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

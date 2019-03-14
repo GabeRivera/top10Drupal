@@ -1,0 +1,21 @@
+uuid: 4748b951-7140-4d6b-bf34-158577f93894
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_hero_title
+    - paragraphs.paragraphs_type.c_hero
+  module:
+    - text
+id: paragraph.c_hero.field_c_hero_title
+field_name: field_c_hero_title
+entity_type: paragraph
+bundle: c_hero
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

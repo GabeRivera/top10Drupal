@@ -5,7 +5,9 @@ dependencies:
   config:
     - field.storage.paragraph.field_layout_components
     - paragraphs.paragraphs_type.c_card_media
+    - paragraphs.paragraphs_type.c_hero
     - paragraphs.paragraphs_type.c_layout_section
+    - paragraphs.paragraphs_type.c_section_title
   module:
     - entity_reference_revisions
 id: paragraph.c_layout_section.field_layout_components
@@ -24,6 +26,8 @@ settings:
     negate: 0
     target_bundles:
       c_card_media: c_card_media
+      c_hero: c_hero
+      c_section_title: c_section_title
     target_bundles_drag_drop:
       c_card_media:
         enabled: true
@@ -31,4 +35,16 @@ settings:
       c_layout_section:
         weight: 4
         enabled: false
+      c_form_location_search:
+        weight: 6
+        enabled: false
+      c_hero:
+        enabled: true
+        weight: 7
+      c_cta:
+        weight: 8
+        enabled: false
+      c_section_title:
+        enabled: true
+        weight: 12
 field_type: entity_reference_revisions

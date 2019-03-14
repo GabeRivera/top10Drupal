@@ -1,0 +1,9 @@
+uuid: bc657888-d9e7-4d64-96a5-0a7edf35320c
+langcode: en
+status: true
+dependencies: {  }
+id: c_form_location_search
+label: 'Location Search Form'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

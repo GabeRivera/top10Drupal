@@ -1,0 +1,41 @@
+uuid: 3dec90d2-bbe4-4d7d-aa11-1e83a41079d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_hero.field_c_hero_extras
+    - field.field.paragraph.c_hero.field_c_hero_text
+    - field.field.paragraph.c_hero.field_c_hero_title
+    - paragraphs.paragraphs_type.c_hero
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.c_hero.default
+targetEntityType: paragraph
+bundle: c_hero
+mode: default
+content:
+  field_c_hero_extras:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_c_hero_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_c_hero_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

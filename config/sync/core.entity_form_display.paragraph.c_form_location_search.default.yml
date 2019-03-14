@@ -1,0 +1,15 @@
+uuid: a9251149-ee66-4422-9f65-4ed82270b5ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.c_form_location_search
+id: paragraph.c_form_location_search.default
+targetEntityType: paragraph
+bundle: c_form_location_search
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,27 @@
+uuid: bc9d46fc-1725-49b8-8bc1-5c664fc5972b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_cta.field_c_cta_url
+    - paragraphs.paragraphs_type.c_cta
+  module:
+    - link
+id: paragraph.c_cta.default
+targetEntityType: paragraph
+bundle: c_cta
+mode: default
+content:
+  field_c_cta_url:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
