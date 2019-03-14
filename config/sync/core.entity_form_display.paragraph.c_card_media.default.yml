@@ -11,9 +11,54 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.c_card_media
   module:
+    - field_group
     - image
     - link
     - text
+third_party_settings:
+  field_group:
+    group_card_options:
+      children:
+        - group_content
+        - group_style
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        label: 'Card Options'
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: 'Card Options'
+    group_content:
+      children:
+        - field_c_card_media_title
+        - field_c_card_media_text
+        - field_c_card_media_link
+        - field_c_card_media_image
+      parent_name: group_card_options
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Content
+    group_style:
+      children:
+        - field_c_card_media_width
+      parent_name: group_card_options
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Style
 id: paragraph.c_card_media.default
 targetEntityType: paragraph
 bundle: c_card_media

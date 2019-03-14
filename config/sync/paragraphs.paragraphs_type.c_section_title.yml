@@ -1,0 +1,9 @@
+uuid: ddb5d6ef-03cc-420d-a82c-b50298432c69
+langcode: en
+status: true
+dependencies: {  }
+id: c_section_title
+label: 'Section Title'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
