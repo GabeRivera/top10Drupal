@@ -11,7 +11,7 @@ dependencies:
     - Top10
 id: exposedformsearch_by_statepage_1
 theme: Top10
-region: content
+region: header
 weight: 0
 provider: null
 plugin: 'views_exposed_filter_block:search_by_state-page_1'
