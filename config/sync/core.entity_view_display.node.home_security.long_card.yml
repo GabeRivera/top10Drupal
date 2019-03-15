@@ -16,7 +16,7 @@ dependencies:
     - field.field.node.home_security.field_business_pros
     - field.field.node.home_security.field_business_rank
     - field.field.node.home_security.field_business_url
-    - image.style.medium
+    - image.style.long_card
     - node.type.home_security
   module:
     - image
@@ -29,9 +29,10 @@ mode: long_card
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_summary_or_trimmed
     weight: 1
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
     region: content
   field_business_cons:
@@ -45,7 +46,7 @@ content:
     weight: 5
     label: hidden
     settings:
-      image_style: medium
+      image_style: long_card
       image_link: ''
     third_party_settings: {  }
     type: image

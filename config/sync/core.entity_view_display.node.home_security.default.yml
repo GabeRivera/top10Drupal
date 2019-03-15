@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.home_security.field_business_pros
     - field.field.node.home_security.field_business_rank
     - field.field.node.home_security.field_business_url
+    - image.style.long_card
     - node.type.home_security
   module:
     - image
@@ -53,7 +54,7 @@ content:
     weight: 5
     label: hidden
     settings:
-      image_style: ''
+      image_style: long_card
       image_link: ''
     third_party_settings: {  }
     type: image
