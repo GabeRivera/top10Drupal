@@ -5,11 +5,11 @@ dependencies: {  }
 name: media_card
 label: 'Media Card (395×245)'
 effects:
-  37901efa-393d-4209-b987-cfb132bbf5c4:
-    uuid: 37901efa-393d-4209-b987-cfb132bbf5c4
-    id: image_scale
+  c0de24e0-3657-4a39-bce5-cabb2a2c084b:
+    uuid: c0de24e0-3657-4a39-bce5-cabb2a2c084b
+    id: image_scale_and_crop
     weight: 2
     data:
       width: 395
       height: 245
-      upscale: true
+      anchor: center-center

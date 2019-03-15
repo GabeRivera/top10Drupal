@@ -5,11 +5,11 @@ dependencies: {  }
 name: business_page_detail_295x265_
 label: 'Business Page Detail (295x265)'
 effects:
-  aa12b187-ada9-4f91-9da2-fb04b6fffc9e:
-    uuid: aa12b187-ada9-4f91-9da2-fb04b6fffc9e
-    id: image_scale
+  119f3e77-02e5-4744-a9e1-ce18ae95a347:
+    uuid: 119f3e77-02e5-4744-a9e1-ce18ae95a347
+    id: image_scale_and_crop
     weight: 2
     data:
       width: 295
       height: 265
-      upscale: true
+      anchor: center-center
