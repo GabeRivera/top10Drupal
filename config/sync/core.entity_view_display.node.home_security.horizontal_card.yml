@@ -9,10 +9,14 @@ dependencies:
     - field.field.node.home_security.field_business_address
     - field.field.node.home_security.field_business_category
     - field.field.node.home_security.field_business_cons
+    - field.field.node.home_security.field_business_hero
     - field.field.node.home_security.field_business_logo
     - field.field.node.home_security.field_business_overall
+    - field.field.node.home_security.field_business_phone
     - field.field.node.home_security.field_business_pros
     - field.field.node.home_security.field_business_rank
+    - field.field.node.home_security.field_business_url
+    - image.style.horizontal_card
     - node.type.home_security
   module:
     - image
@@ -58,7 +62,7 @@ content:
     weight: 105
     label: hidden
     settings:
-      image_style: ''
+      image_style: horizontal_card
     third_party_settings: {  }
     type: image_url
     region: content
@@ -92,6 +96,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_business_address: true
+  field_business_hero: true
   field_business_location: true
   field_business_phone: true
   field_business_url: true

@@ -1,0 +1,15 @@
+uuid: ffdb4290-7a36-4a45-a0ee-d71fd0c6089f
+langcode: en
+status: true
+dependencies: {  }
+name: media_card
+label: 'Media Card (395×245)'
+effects:
+  37901efa-393d-4209-b987-cfb132bbf5c4:
+    uuid: 37901efa-393d-4209-b987-cfb132bbf5c4
+    id: image_scale
+    weight: 2
+    data:
+      width: 395
+      height: 245
+      upscale: true

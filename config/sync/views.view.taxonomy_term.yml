@@ -2,6 +2,8 @@ uuid: f192be88-3be1-47a9-88ed-830b387ac3a5
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.node.long_card
   module:
     - address
     - node
@@ -499,6 +501,8 @@ display:
         filter_groups: false
         sorts: false
         use_ajax: false
+        style: false
+        row: false
       filter_groups:
         operator: AND
         groups:
@@ -531,6 +535,18 @@ display:
           entity_field: title
           plugin_id: standard
       use_ajax: true
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: long_card
     cache_metadata:
       contexts:
         - 'languages:language_content'

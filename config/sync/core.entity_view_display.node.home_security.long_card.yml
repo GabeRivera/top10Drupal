@@ -1,9 +1,9 @@
-uuid: 1b0d06a1-f1f5-4694-b76b-329041985dfd
+uuid: b69f1cbe-ef25-46ac-8dd1-4f85be3c786c
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.business_page_detail
+    - core.entity_view_mode.node.long_card
     - field.field.node.home_security.body
     - field.field.node.home_security.field_api_id
     - field.field.node.home_security.field_business_address
@@ -16,85 +16,64 @@ dependencies:
     - field.field.node.home_security.field_business_pros
     - field.field.node.home_security.field_business_rank
     - field.field.node.home_security.field_business_url
-    - image.style.business_page_detail_295x265_
+    - image.style.medium
     - node.type.home_security
   module:
     - image
     - text
     - user
-id: node.home_security.business_page_detail
+id: node.home_security.long_card
 targetEntityType: node
 bundle: home_security
-mode: business_page_detail
+mode: long_card
 content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_api_id:
-    weight: 107
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: number_unformatted
-    region: content
-  field_business_category:
-    weight: 106
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_business_cons:
-    weight: 103
-    label: above
+    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_business_logo:
-    weight: 105
+    weight: 5
     label: hidden
     settings:
-      image_style: business_page_detail_295x265_
+      image_style: medium
+      image_link: ''
     third_party_settings: {  }
-    type: image_url
+    type: image
     region: content
   field_business_overall:
-    weight: 104
-    label: above
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_business_pros:
-    weight: 102
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_business_rank:
-    weight: 108
-    label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_api_id: true
   field_business_address: true
+  field_business_category: true
   field_business_hero: true
-  field_business_location: true
   field_business_phone: true
+  field_business_rank: true
   field_business_url: true

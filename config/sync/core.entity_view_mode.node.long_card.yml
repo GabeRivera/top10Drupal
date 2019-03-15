@@ -1,0 +1,10 @@
+uuid: a2069856-722b-4014-bebb-45614584d743
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.long_card
+label: 'Long Card'
+targetEntityType: node
+cache: true

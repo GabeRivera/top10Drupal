@@ -1,0 +1,15 @@
+uuid: 85b4d59c-8421-495b-b14a-fe53635574f3
+langcode: en
+status: true
+dependencies: {  }
+name: business_page_detail_295x265_
+label: 'Business Page Detail (295x265)'
+effects:
+  aa12b187-ada9-4f91-9da2-fb04b6fffc9e:
+    uuid: aa12b187-ada9-4f91-9da2-fb04b6fffc9e
+    id: image_scale
+    weight: 2
+    data:
+      width: 295
+      height: 265
+      upscale: true

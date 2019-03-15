@@ -1,0 +1,15 @@
+uuid: 1ba1e828-1726-4c9f-8712-9e81a29e0ff6
+langcode: en
+status: true
+dependencies: {  }
+name: horizontal_card
+label: 'Horizontal Card (190x175)'
+effects:
+  0be9fb70-f893-4863-a809-1704078756bf:
+    uuid: 0be9fb70-f893-4863-a809-1704078756bf
+    id: image_scale
+    weight: 2
+    data:
+      width: 190
+      height: 175
+      upscale: true
