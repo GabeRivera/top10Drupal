@@ -1,0 +1,15 @@
+uuid: 8c6d9b93-23d5-4f76-85e7-350486ad499f
+langcode: en
+status: true
+dependencies: {  }
+name: long_card
+label: 'Long Card (275x245)'
+effects:
+  bd8568f1-8b40-4cd5-9ece-65168e1335bb:
+    uuid: bd8568f1-8b40-4cd5-9ece-65168e1335bb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 275
+      height: 245
+      anchor: center-center

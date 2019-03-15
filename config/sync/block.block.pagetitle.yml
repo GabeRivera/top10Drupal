@@ -1,0 +1,28 @@
+uuid: 8fa6e990-db1b-4ece-9536-7f90bd4e45ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - Top10
+id: pagetitle
+theme: Top10
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      home_security: home_security
+      landing_page: landing_page
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
