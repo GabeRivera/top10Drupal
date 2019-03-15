@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.c_card_media.field_c_card_media_text
     - field.field.paragraph.c_card_media.field_c_card_media_title
     - field.field.paragraph.c_card_media.field_c_card_media_width
+    - field.field.paragraph.c_card_media.field_card_type
     - image.style.thumbnail
     - paragraphs.paragraphs_type.c_card_media
   module:
@@ -48,6 +49,7 @@ third_party_settings:
       label: Content
     group_style:
       children:
+        - field_card_type
         - field_c_card_media_width
       parent_name: group_card_options
       weight: 21
@@ -97,7 +99,13 @@ content:
     type: text_textfield
     region: content
   field_c_card_media_width:
-    weight: 4
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_card_type:
+    weight: 22
     settings: {  }
     third_party_settings: {  }
     type: options_select

@@ -1,0 +1,23 @@
+uuid: bae68014-2cbf-4c67-b437-506586155f2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_type
+    - paragraphs.paragraphs_type.c_card_media
+  module:
+    - options
+id: paragraph.c_card_media.field_card_type
+field_name: field_card_type
+entity_type: paragraph
+bundle: c_card_media
+label: 'Card Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: photo
+default_value_callback: ''
+settings: {  }
+field_type: list_string

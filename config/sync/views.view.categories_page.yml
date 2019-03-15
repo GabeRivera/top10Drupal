@@ -229,7 +229,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: categories-page-new
+      path: categories
     cache_metadata:
       max-age: -1
       contexts:
