@@ -1,0 +1,26 @@
+uuid: 37514b7c-3dd2-43a7-80fc-12ebab3dc86b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_text.field_c_text_text
+    - paragraphs.paragraphs_type.c_text
+  module:
+    - text
+id: paragraph.c_text.default
+targetEntityType: paragraph
+bundle: c_text
+mode: default
+content:
+  field_c_text_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

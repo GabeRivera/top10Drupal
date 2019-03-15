@@ -1,0 +1,9 @@
+uuid: a9f3382c-7144-41fb-b78f-c87095b27206
+langcode: en
+status: true
+dependencies: {  }
+id: c_row_title
+label: 'Row Title'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

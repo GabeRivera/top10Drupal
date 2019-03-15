@@ -7,7 +7,9 @@ dependencies:
     - paragraphs.paragraphs_type.c_card_media
     - paragraphs.paragraphs_type.c_hero
     - paragraphs.paragraphs_type.c_layout_section
+    - paragraphs.paragraphs_type.c_row_title
     - paragraphs.paragraphs_type.c_section_title
+    - paragraphs.paragraphs_type.c_text
   module:
     - entity_reference_revisions
 id: paragraph.c_layout_section.field_layout_components
@@ -28,6 +30,8 @@ settings:
       c_card_media: c_card_media
       c_hero: c_hero
       c_section_title: c_section_title
+      c_row_title: c_row_title
+      c_text: c_text
     target_bundles_drag_drop:
       c_card_media:
         enabled: true
@@ -47,4 +51,10 @@ settings:
       c_section_title:
         enabled: true
         weight: 12
+      c_row_title:
+        enabled: true
+        weight: 13
+      c_text:
+        enabled: true
+        weight: 16
 field_type: entity_reference_revisions

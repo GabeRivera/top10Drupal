@@ -1,0 +1,26 @@
+uuid: 517f67b6-8045-4797-bb6e-e84d7449b0c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.c_row_title.field_c_row_title_title
+    - paragraphs.paragraphs_type.c_row_title
+  module:
+    - text
+id: paragraph.c_row_title.default
+targetEntityType: paragraph
+bundle: c_row_title
+mode: default
+content:
+  field_c_row_title_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
