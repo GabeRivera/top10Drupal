@@ -1,4 +1,4 @@
-uuid: 746ffe05-b296-4f9c-8c35-57592b7ceb2f
+uuid: 97f7f824-b696-4881-9834-bbfb9dcd1683
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
     - node
     - taxonomy
     - user
-id: search_by_state
-label: 'Search By State'
+id: duplicate_of_search_by_state
+label: 'Duplicate of Search By State'
 module: views
 description: ''
 tag: ''
@@ -297,7 +297,7 @@ display:
     display_options:
       display_extenders: {  }
       path: search-by-state
-      exposed_block: true
+      exposed_block: false
       display_description: ''
     cache_metadata:
       max-age: -1
