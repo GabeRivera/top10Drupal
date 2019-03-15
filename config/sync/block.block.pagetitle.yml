@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - ctools
+    - system
   theme:
     - Top10
 id: pagetitle
@@ -21,8 +22,13 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      home_security: home_security
-      landing_page: landing_page
-    negate: true
+      article: article
+      page: page
+    negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }
