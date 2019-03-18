@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: business_page_detail_295x265_
-label: 'Business Page Detail (295x265)'
+label: 'Business Page Detail (288x260)'
 effects:
   119f3e77-02e5-4744-a9e1-ce18ae95a347:
     uuid: 119f3e77-02e5-4744-a9e1-ce18ae95a347
     id: image_scale_and_crop
     weight: 2
     data:
-      width: 295
-      height: 265
+      width: 288
+      height: 260
       anchor: center-center
