@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: horizontal_card
-label: 'Horizontal Card (190x175)'
+label: 'Horizontal Card (194x175)'
 effects:
   f8b83380-a917-48f2-8160-8500278c070f:
     uuid: f8b83380-a917-48f2-8160-8500278c070f
     id: image_scale_and_crop
     weight: 2
     data:
-      width: 190
+      width: 194
       height: 175
       anchor: center-center

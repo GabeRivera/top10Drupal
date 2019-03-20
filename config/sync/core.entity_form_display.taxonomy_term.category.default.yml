@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.category.field_number_of_reviews
     - field.field.taxonomy_term.category.field_taxonomy_image
     - image.style.thumbnail
     - taxonomy.vocabulary.category
@@ -23,6 +24,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_number_of_reviews:
+    weight: 32
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_taxonomy_image:
     weight: 31
     settings:

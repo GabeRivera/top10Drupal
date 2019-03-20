@@ -1,28 +1,23 @@
-uuid: cb8f01c4-0671-4789-ac4a-aeb015e51157
+uuid: a1a4dcef-b8a6-438d-8d26-b7e4f182aa96
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.business_page_detail
   module:
+    - addtoany
     - ctools
-    - views
   theme:
     - Top10
-id: views_block__business_page_detail_block_1
+id: addtoanybuttons
 theme: Top10
 region: sidebar_first
-weight: -6
+weight: -5
 provider: null
-plugin: 'views_block:business_page_detail-block_1'
+plugin: addtoany_block
 settings:
-  id: 'views_block:business_page_detail-block_1'
-  label: ''
-  provider: views
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  provider: addtoany
   label_display: '0'
-  views_label: ''
-  items_per_page: none
-  context_mapping: {  }
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
