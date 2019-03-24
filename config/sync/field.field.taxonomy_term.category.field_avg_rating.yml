@@ -1,0 +1,23 @@
+uuid: 30e0a0f4-f9f4-4c10-846b-5ba9e2b21b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_avg_rating
+    - taxonomy.vocabulary.category
+id: taxonomy_term.category.field_avg_rating
+field_name: field_avg_rating
+entity_type: taxonomy_term
+bundle: category
+label: 'Average Rating'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

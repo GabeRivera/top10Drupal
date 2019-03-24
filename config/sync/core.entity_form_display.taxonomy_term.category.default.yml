@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.category.field_avg_rating
     - field.field.taxonomy_term.category.field_number_of_reviews
     - field.field.taxonomy_term.category.field_taxonomy_image
+    - field.field.taxonomy_term.category.field_total_number_of_
     - image.style.thumbnail
     - taxonomy.vocabulary.category
   module:
@@ -24,6 +26,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_avg_rating:
+    weight: 33
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_number_of_reviews:
     weight: 32
     settings:
@@ -38,6 +47,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_total_number_of_:
+    weight: 34
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   name:
     type: string_textfield

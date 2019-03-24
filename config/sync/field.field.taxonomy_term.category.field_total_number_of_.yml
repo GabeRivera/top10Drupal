@@ -1,0 +1,23 @@
+uuid: a1cac78c-ed0a-4897-b0bd-767d0684b51b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_total_number_of_
+    - taxonomy.vocabulary.category
+id: taxonomy_term.category.field_total_number_of_
+field_name: field_total_number_of_
+entity_type: taxonomy_term
+bundle: category
+label: 'Total Number of Businesses'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
