@@ -1,0 +1,22 @@
+uuid: 706aa514-7360-4b63-8e12-78fffef6ae37
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.term_name
+    - field.field.taxonomy_term.category.field_avg_rating
+    - field.field.taxonomy_term.category.field_number_of_reviews
+    - field.field.taxonomy_term.category.field_taxonomy_image
+    - field.field.taxonomy_term.category.field_total_number_of_
+    - taxonomy.vocabulary.category
+id: taxonomy_term.category.term_name
+targetEntityType: taxonomy_term
+bundle: category
+mode: term_name
+content: {  }
+hidden:
+  description: true
+  field_avg_rating: true
+  field_number_of_reviews: true
+  field_taxonomy_image: true
+  field_total_number_of_: true

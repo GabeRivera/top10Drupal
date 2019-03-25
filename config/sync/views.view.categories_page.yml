@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.full
+    - core.entity_view_mode.taxonomy_term.term_name
     - taxonomy.vocabulary.category
   module:
     - taxonomy
@@ -170,7 +171,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          view_mode: default
+          view_mode: term_name
           entity_type: taxonomy_term
           plugin_id: rendered_entity
       filters:
@@ -222,6 +223,8 @@ display:
       tags:
         - 'config:core.entity_view_display.taxonomy_term.category.default'
         - extensions
+        - 'config:core.entity_view_display.taxonomy_term.category.term_name'
+        - extensions
   page_1:
     display_plugin: page
     id: page_1
@@ -238,4 +241,6 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.taxonomy_term.category.default'
+        - extensions
+        - 'config:core.entity_view_display.taxonomy_term.category.term_name'
         - extensions
