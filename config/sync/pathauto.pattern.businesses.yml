@@ -7,16 +7,16 @@ dependencies:
 id: businesses
 label: 'Business led by taxonomy'
 type: 'canonical_entities:node'
-pattern: '[node:field_business_category:entity:parent]/[node:field_business_category:entity:name]/[node:title]'
+pattern: 'category/[node:field_business_category:entity:parent]/[node:field_business_category:entity:name]/[node:title]'
 selection_criteria:
-  3f91aa72-433b-4719-8c65-87803a10135c:
+  9840f912-d46f-4eec-a463-82d27a5242d1:
     id: node_type
     bundles:
       home_security: home_security
     negate: false
     context_mapping:
       node: node
-    uuid: 3f91aa72-433b-4719-8c65-87803a10135c
+    uuid: 9840f912-d46f-4eec-a463-82d27a5242d1
 selection_logic: and
 weight: -5
 relationships: {  }
