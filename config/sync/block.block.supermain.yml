@@ -51,8 +51,8 @@ settings:
   smallech: ''
   smallicm: ''
   smallich: ''
-  smallamt: ''
-  smallabt: '1'
+  smallamt: '<i class="material-icons"> menu </i>'
+  smallabt: '0'
   supersubs: 1
   minwidth: '12'
   maxwidth: '27'

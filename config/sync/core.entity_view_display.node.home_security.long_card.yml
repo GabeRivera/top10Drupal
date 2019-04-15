@@ -65,6 +65,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+  field_business_rank:
+    type: number_unformatted
+    weight: 6
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 0
     region: content
@@ -77,5 +84,4 @@ hidden:
   field_business_category: true
   field_business_hero: true
   field_business_phone: true
-  field_business_rank: true
   field_business_url: true
