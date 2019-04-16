@@ -23,6 +23,7 @@
         "drupal/address": "~1.0",
         "drupal/addtoany": "^1.10",
         "drupal/admin_toolbar": "^1.26",
+        "drupal/advagg": "^3.5",
         "drupal/bamboo_twig": "^4.1",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
