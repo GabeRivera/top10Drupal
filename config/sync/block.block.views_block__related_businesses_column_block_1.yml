@@ -8,9 +8,9 @@ dependencies:
     - ctools
     - views
   theme:
-    - Top10
+    - top10
 id: views_block__related_businesses_column_block_1
-theme: Top10
+theme: top10
 region: sidebar_second
 weight: 0
 provider: null

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa18f7f63a0f5d9f8cab586c62f7872c",
+    "content-hash": "a70ac51d763e95e29e69ed0ab00708cd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -157,6 +157,17 @@
             ],
             "description": "Backports unserialize options introduced in PHP 7.0 to older PHP versions.",
             "time": "2017-02-03T09:55:47+00:00"
+        },
+        {
+            "name": "business-reviews",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GabeRivera/business_reviews_module.git",
+                "reference": "master"
+            },
+            "type": "drupal-module",
+            "time": "2019-04-23T14:54:36+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -6746,6 +6757,17 @@
             "time": "2019-03-25T07:48:46+00:00"
         },
         {
+            "name": "top10",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GabeRivera/top10theme.git",
+                "reference": "master"
+            },
+            "type": "drupal-theme",
+            "time": "2019-04-17T18:17:58+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.38.4",
             "source": {
@@ -9472,7 +9494,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/taxonomy_menu_ui": 10
+        "business-reviews": 20,
+        "drupal/taxonomy_menu_ui": 10,
+        "top10": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -8,9 +8,9 @@ dependencies:
     - superfish
     - system
   theme:
-    - Top10
+    - top10
 id: supermain
-theme: Top10
+theme: top10
 region: navbar
 weight: -5
 provider: null

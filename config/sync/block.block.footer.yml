@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - Top10
+    - top10
 id: footer
-theme: Top10
+theme: top10
 region: footer_last
 weight: 0
 provider: null

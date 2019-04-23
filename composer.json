@@ -13,10 +13,37 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "business-reviews",
+                "version": "dev-master",
+                "type":"drupal-module",
+                "source": {
+                    "url": "https://github.com/GabeRivera/business_reviews_module.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "top10",
+                "version": "dev-master",
+                "type":"drupal-theme",
+                "source": {
+                    "url": "https://github.com/GabeRivera/top10theme.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "require": {
         "php": ">=5.6",
+        "business-reviews": "dev-master",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
@@ -39,6 +66,7 @@
         "drupal/taxonomy_menu": "^3.4",
         "drupal/taxonomy_menu_ui": "^1.0@beta",
         "drush/drush": "^9.0.0",
+        "top10": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",

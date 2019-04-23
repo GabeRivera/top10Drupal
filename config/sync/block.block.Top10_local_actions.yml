@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - Top10
+    - top10
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: Top10_local_actions
-theme: Top10
+id: top10_local_actions
+theme: top10
 region: content
 weight: -3
 provider: null

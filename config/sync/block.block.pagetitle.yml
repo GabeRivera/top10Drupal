@@ -6,9 +6,9 @@ dependencies:
     - ctools
     - system
   theme:
-    - Top10
+    - top10
 id: pagetitle
-theme: Top10
+theme: top10
 region: header
 weight: 0
 provider: null

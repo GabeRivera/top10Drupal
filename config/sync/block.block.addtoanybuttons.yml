@@ -6,9 +6,9 @@ dependencies:
     - addtoany
     - ctools
   theme:
-    - Top10
+    - top10
 id: addtoanybuttons
-theme: Top10
+theme: top10
 region: sidebar_first
 weight: -5
 provider: null

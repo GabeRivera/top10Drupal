@@ -5,9 +5,9 @@ dependencies:
   module:
     - search
   theme:
-    - Top10
+    - top10
 id: searchform
-theme: Top10
+theme: top10
 region: navbar
 weight: -4
 provider: null
