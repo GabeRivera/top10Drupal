@@ -12,5 +12,4 @@ third_party_settings:
 name: Category
 vid: category
 description: 'Business Category'
-hierarchy: 1
 weight: 0

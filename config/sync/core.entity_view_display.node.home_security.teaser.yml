@@ -28,10 +28,12 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
   field_api_id: true
   field_business_address: true
   field_business_category: true
   field_business_cons: true
+  field_business_hero: true
   field_business_location: true
   field_business_logo: true
   field_business_overall: true
